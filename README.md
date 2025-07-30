@@ -53,7 +53,7 @@ root@838e9d354ef9:~/t/git/onnxruntime-linux-x64-1.22.0# tree -L 2
 7 directories, 32 files
 ```
 
-## ref train with multiple-gpu project 
+## ref train unet model with multiple-gpu project and export onnx
 [https://github.com/tlqtangok/unet_multiple_gpu](https://github.com/tlqtangok/unet_multiple_gpu)
 
 

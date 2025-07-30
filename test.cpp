@@ -323,7 +323,36 @@ std::vector<float> OnnxTest::mat_to_chw_vector(const cv::Mat& mat)
     int width = mat.cols;
     
     vec.resize(channels * height * width);
-    
+
+
+
+    std::vector<cv::Mat> v_img; 
+    cv::split(mat, v_img);
+
+
+    size_t offset = 0;
+    for (const auto& eimg : v_img)
+    {
+        if (eimg.isContinuous())
+        {
+            const float* data = eimg.ptr<float>();
+            std::copy(data, data + eimg.total(), vec.begin() + offset);
+        }
+        else
+        {
+            size_t current_offset = offset;
+            for (int h = 0; h < eimg.rows; ++h)
+            {
+                const float* row_data = eimg.ptr<float>(h);
+                std::copy(row_data, row_data + eimg.cols, vec.begin() + current_offset);
+                current_offset += eimg.cols;
+            }
+        }
+        offset += eimg.total();
+    }
+
+
+#if 0
     for (int c = 0; c < channels; ++c) 
     {
         for (int h = 0; h < height; ++h) 
@@ -334,6 +363,7 @@ std::vector<float> OnnxTest::mat_to_chw_vector(const cv::Mat& mat)
             }
         }
     }
+#endif 
     
     return vec;
 }

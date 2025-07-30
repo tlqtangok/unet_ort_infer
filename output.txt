@@ -1,0 +1,72 @@
+root@838e9d354ef9:~/t/git/onnxruntime-linux-x64-1.22.0/test# !1092
+./build/test_onnx --model $t/model.onnx --input $m/data/infer/imgs --output $m/data/infer/imgs --batch 2
+ONNX Runtime UNet Inference Tool
+Model file found: /home/jd/t/model.onnx
+Environment created successfully
+Using CPU execution provider
+Model loaded successfully from: /home/jd/t/model.onnx
+Model Info:
+  Input count: 1
+  Output count: 1
+  Batch size: 2
+  GPU mode: disabled
+  Input 0: input [1, 3, 160, 160]
+  Output 0: output [1, 2, 160, 160]
+Starting inference...
+Input folder: /home/jd/t/Pytorch-UNet-master/data/infer/imgs
+Output folder: /home/jd/t/Pytorch-UNet-master/data/infer/imgs
+Batch size: 2
+GPU mode: disabled
+Found 20 image files
+Processing batch 1 (2 images)
+  Processing: "8_8_tct_cell_179.jpg"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/8_8_tct_cell_179_OUT.png
+  Processing: "8_8_tct_cell_250.jpg"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/8_8_tct_cell_250_OUT.png
+Processing batch 2 (2 images)
+  Processing: "DTP2504073_08_09_cell_133.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504073_08_09_cell_133_OUT.png
+  Processing: "DTP2504073_08_09_cell_233.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504073_08_09_cell_233_OUT.png
+Processing batch 3 (2 images)
+  Processing: "DTP2504073_08_09_cell_33.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504073_08_09_cell_33_OUT.png
+  Processing: "DTP2504092_08_09_cell_133.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504092_08_09_cell_133_OUT.png
+Processing batch 4 (2 images)
+  Processing: "DTP2504092_08_09_cell_233.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504092_08_09_cell_233_OUT.png
+  Processing: "DTP2504092_08_09_cell_33.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504092_08_09_cell_33_OUT.png
+Processing batch 5 (2 images)
+  Processing: "DTP2504103_08_09_cell_122.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_122_OUT.png
+  Processing: "DTP2504103_08_09_cell_22.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_22_OUT.png
+Processing batch 6 (2 images)
+  Processing: "DTP2504103_08_09_cell_220.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_220_OUT.png
+  Processing: "DTP2504103_08_09_cell_221.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_221_OUT.png
+Processing batch 7 (2 images)
+  Processing: "DTP2504103_08_09_cell_222.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_222_OUT.png
+  Processing: "DTP2504103_08_09_cell_223.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_223_OUT.png
+Processing batch 8 (2 images)
+  Processing: "DTP2504103_08_09_cell_224.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_224_OUT.png
+  Processing: "DTP2504103_08_09_cell_225.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_225_OUT.png
+Processing batch 9 (2 images)
+  Processing: "DTP2504103_08_09_cell_226.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_226_OUT.png
+  Processing: "DTP2504103_08_09_cell_227.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_227_OUT.png
+Processing batch 10 (2 images)
+  Processing: "DTP2504103_08_09_cell_228.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_228_OUT.png
+  Processing: "DTP2504103_08_09_cell_229.png"
+Mask saved to: /home/jd/t/Pytorch-UNet-master/data/infer/imgs/DTP2504103_08_09_cell_229_OUT.png
+Inference completed successfully
+

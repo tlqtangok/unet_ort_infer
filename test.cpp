@@ -353,6 +353,7 @@ std::vector<float> OnnxTest::mat_to_chw_vector(const cv::Mat& mat)
 
 
 #if 0
+    
     for (int c = 0; c < channels; ++c) 
     {
         for (int h = 0; h < height; ++h) 

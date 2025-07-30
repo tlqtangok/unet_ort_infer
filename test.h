@@ -36,6 +36,8 @@ public:
     
     void set_gpu_mode(bool use_gpu);
     void set_batch_size(int batch_size);
+
+    std::vector<std::string> get_image_files(const std::string& folder_path);
     
 private:
     void print_test_status(const std::string& name, bool result);
@@ -47,7 +49,6 @@ private:
     cv::Mat extract_mask_from_output(const std::vector<float>& output_data);
     bool save_result(const cv::Mat& result, const std::string& output_path);
     std::vector<float> mat_to_chw_vector(const cv::Mat& mat);
-    std::vector<std::string> get_image_files(const std::string& folder_path);
     std::string get_output_filename(const std::string& input_filename);
 };
 
